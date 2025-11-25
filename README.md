@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🏎️ F1 Hub — Formula 1 Dashboard & Race Predictor
 
-## Getting Started
+A full-stack Formula 1 analytics platform built with Next.js, TailwindCSS, Framer Motion, and Supabase.
+This project delivers an interactive dashboard for F1 fans with real-time-style widgets, team-colored UI elements, and a machine-learning-ready architecture.
 
-First, run the development server:
+⸻
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🏠 Home Dashboard
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A live F1-style dashboard featuring:
+	•	Favourite Driver Card (2025 driver lineup ready)
+	•	Car Widget with dynamic livery
+	•	Upcoming Starting Grid (team-colored, alternating layout)
+	•	Driver Stats (predictions + last races)
+	•	Pole Gap vertical chart
+	•	Next Race Countdown
+	•	Driver Standings (team-colored indicator bar)
+	•	Constructor Standings
+	•	Weather Summary
+	•	Last Race Results
+	•	Trending Drivers
+	•	Fastest Lap Comparison
+	•	Track Preview Card (track map ready)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All widgets are fully animated using Framer Motion, with a modern dark theme inspired by F1 Live Timing.
 
-## Learn More
+⸻
 
-To learn more about Next.js, take a look at the following resources:
+🧑‍🤝‍🧑 User System (Supabase Auth)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Includes a complete authentication system using Supabase:
+	•	User Signup (Email + Password)
+	•	Login Page
+	•	Onboarding Flow
+	•	Select favourite driver
+	•	Select favourite team
+	•	Stores preferences in profiles table
+	•	Row-Level Security policies ensuring every user sees only their own data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Backend connected via a single Supabase client in /lib/supabase.ts.
 
-## Deploy on Vercel
+⸻
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🏎️ Predictor Page (ML-Ready)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The Predictor page (frontend prototype for now) includes:
+	•	Driver Head-to-Head widget
+	•	Track Characteristics
+	•	Tyre Strategy Suggestion
+	•	Weather impact
+	•	Sector Pace Panel
+	•	Race Pace Delta Analysis
+	•	Performance Index Summary
+	•	Race Prediction Result Block
+
+All widgets currently use static data but are structured to plug directly into FastF1 API outputs and a future machine-learning model.
+
+⸻
+
+🧩 Additional Pages
+
+Drivers Page
+
+Grid of all 2025 drivers with:
+	•	PNG photos from public/drivers/
+	•	Team colors
+	•	Clean, minimal cards
+
+Teams Page
+
+All 10 teams with:
+	•	Team logo from public/team-logos/
+	•	Short description
+	•	Mini color bar
+
+Races Page
+
+All 24 races of the 2025 calendar with:
+	•	Title, date, circuit
+	•	Track outline map support
+	•	Dark card layout
+
+⸻
+
+🛠️ Tech Stack
+
+Frontend
+	•	Next.js 14+ (App Router)
+	•	React
+	•	TailwindCSS
+	•	Framer Motion
+	•	Radix UI (optional)
+
+Backend
+	•	Supabase Authentication
+	•	Supabase Database
+	•	RLS Security Policies
+
+Future Integrations
+	•	FastF1 API for real lap timing & telemetry
+	•	Machine learning winner predictor model
