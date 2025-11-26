@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ferrari",
+    "name": "Scuderia Ferrari HP",
+    "logo": "/team-logos/ferrari-logo.png",
+    "drivers": ["hamilton", "leclerc"],
+    "principal": "Frédéric Vasseur",
+    "base": "Maranello, Italy",
+    "carName": "Ferrari SF-25",
+    "carImage": "/cars/ferrari.png",
+    "worldChampionships": 16
+  },
+  {
+    "id": "redbull",
+    "name": "Oracle Red Bull Racing",
+    "logo": "/team-logos/redbull-logoo.png",
+    "drivers": ["verstappen", "tsunoda"],
+    "principal": "Christian Horner",
+    "base": "Milton Keynes, UK",
+    "carName": "Red Bull RB20",
+    "carImage": "/cars/redbull.png",
+    "worldChampionships": 6
+  }
+]

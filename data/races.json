@@ -1,0 +1,60 @@
+[
+  {
+    "id": "bahrain",
+    "name": "Bahrain Grand Prix",
+    "country": "Bahrain",
+    "track": "Bahrain International Circuit",
+    "date": "2025-03-01",
+    "laps": 57,
+    "lengthKm": 5.412,
+    "drsZones": 3,
+    "image": "/tracks/bahrain.png",
+    "schedule": {
+      "fp1": "Friday 13:30",
+      "fp2": "Friday 17:00",
+      "fp3": "Saturday 14:30",
+      "qualifying": "Saturday 18:00",
+      "race": "Sunday 18:00"
+    },
+    "stats": {
+      "overtaking": 7.2,
+      "tyreWear": 6.9,
+      "downforce": "Medium",
+      "braking": "High"
+    },
+    "results": {
+      "pole": "Verstappen",
+      "winner": "Hamilton",
+      "fastestLap": "Leclerc"
+    }
+  },
+  {
+    "id": "jeddah",
+    "name": "Saudi Arabian Grand Prix",
+    "country": "Saudi Arabia",
+    "track": "Jeddah Corniche Circuit",
+    "date": "2025-03-08",
+    "laps": 50,
+    "lengthKm": 6.174,
+    "drsZones": 2,
+    "image": "/tracks/jeddah.png",
+    "schedule": {
+      "fp1": "Thursday 14:00",
+      "fp2": "Thursday 17:30",
+      "fp3": "Friday 14:30",
+      "qualifying": "Friday 18:00",
+      "race": "Saturday 18:00"
+    },
+    "stats": {
+      "overtaking": 5.1,
+      "tyreWear": 3.5,
+      "downforce": "Low",
+      "braking": "Medium"
+    },
+    "results": {
+      "pole": "Leclerc",
+      "winner": "Verstappen",
+      "fastestLap": "Hamilton"
+    }
+  }
+]

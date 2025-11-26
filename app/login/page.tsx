@@ -13,23 +13,22 @@ export default function LoginPage() {
   const [error, setError] = useState("");
 
   async function handleLogin(e: any) {
-    e.preventDefault();
-    setError("");
+  e.preventDefault();
+  setError("");
 
-    const { data, error: loginError } = await supabase.auth.signInWithPassword({
-      email,
-      password,
-    });
+  const { data, error: loginError } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  });
 
-    if (loginError) {
-      setError(loginError.message);
-      return;
-    }
-
-    // If user doesn't have onboarding done → go to onboarding
-    router.push("/onboarding");
+  if (loginError) {
+    setError(loginError.message);
+    return;
   }
 
+  // 🔥 After login → go to splash screen
+  router.push("/splash");
+}
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-6">
       <motion.div
